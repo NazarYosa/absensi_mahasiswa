@@ -93,12 +93,6 @@ if (isset($_POST['Submit'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">ABSENSI</span>
-        </div>
-    </nav>
-
     <div class="container">
         <h1 class="text-center">DAFTAR HADIR MAHASISWA</h1>
         <form action="" method="post" name="form_absen">
@@ -160,7 +154,7 @@ if (isset($_POST['Submit'])) {
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Check if there is data in the result set
-            var dataExist = <?php echo $dataExist ? 'true' : 'false'; ?>;
+            let dataExist = <?php echo $dataExist ? 'true' : 'false'; ?>;
 
             if (dataExist) {
                 // Show success message
